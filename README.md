@@ -1,105 +1,71 @@
 # File Organizer
 
-A robust Python-based file organization tool that automatically categorizes and organizes files based on their types.
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+A powerful and user-friendly desktop application to automatically organize files by their types.
 
 ## Features
 
-- 🚀 Automatic file categorization based on file types
-- 📁 Custom category support
-- 🔄 Intelligent duplicate file handling
-- 📊 Detailed operation logging
-- ⚙️ Configurable through YAML
+- 🖥️ Modern graphical user interface
+- 🚀 Fast and efficient file processing
+- 📁 Intelligent file type detection
+- 🎯 Custom category support
+- 💫 Real-time progress tracking
+- 🛡️ Error handling and recovery
 
 ## Installation
 
-Clone the repository:
 ```bash
-git clone https://github.com/SnehPatel21/file-organizer.git
-```
+# Clone the repository
+git clone https://github.com/yourusername/file-organizer.git
 
-Navigate to the directory:
-```bash
+# Navigate to directory
 cd file-organizer
-```
 
-Create and activate virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-Install dependencies:
-```bash
+# Install dependencies
 pip install -r requirements.txt
+
+# Run the application
+python -m src.gui
 ```
 
 ## Usage
 
-Basic usage:
+1. Launch the application
+2. Click "Browse" to select a directory
+3. Click "Organize Files" to start
+4. Monitor progress in real-time
+5. Review organization summary
+
+## Development
+
 ```bash
-python -m src.organizer /path/to/directory
-```
+# Setup development environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
 
-With custom configuration:
-```bash
-python -m src.organizer /path/to/directory --config path/to/config.yaml
-```
+# Run tests
+pytest tests/
 
-## Configuration
-
-Customize categories in `config/default_categories.yaml`:
-
-```yaml
-categories:
-  images:
-    extensions: [".jpg", ".jpeg", ".png", ".gif"]
-    description: "Image files"
-  documents:
-    extensions: [".pdf", ".doc", ".docx", ".txt"]
-    description: "Document files"
-```
-
-## Project Structure
-
-```
-file-organizer/
-├── src/
-│   ├── __init__.py
-│   ├── organizer.py       # Core organization logic
-│   ├── file_handler.py    # File operations
-│   └── utils.py          # Helper functions
-├── tests/
-│   ├── __init__.py
-│   └── test_organizer.py
-├── config/
-│   └── default_categories.yaml
-└── ...
+# Build executable
+pyinstaller --name FileOrganizer --windowed --onefile src/gui.py
 ```
 
 ## Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'feat: Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Development
+## Acknowledgments
 
-Set up development environment:
-```bash
-pip install -r requirements.txt
-pre-commit install
-```
-
-Run tests:
-```bash
-pytest tests/
-```
+- Built with Python and Tkinter
+- File type detection using python-magic
+- Configuration using PyYAML
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 

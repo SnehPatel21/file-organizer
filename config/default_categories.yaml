@@ -1,0 +1,20 @@
+categories:
+  images:
+    extensions: [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".svg"]
+    description: "Image files"
+  
+  documents:
+    extensions: [".pdf", ".doc", ".docx", ".txt", ".md", ".xlsx", ".ppt", ".pptx"]
+    description: "Document files"
+    
+  audio:
+    extensions: [".mp3", ".wav", ".flac", ".m4a", ".aac"]
+    description: "Audio files"
+    
+  video:
+    extensions: [".mp4", ".avi", ".mkv", ".mov", ".wmv"]
+    description: "Video files"
+    
+  archives:
+    extensions: [".zip", ".rar", ".7z", ".tar", ".gz"]
+    description: "Compressed archives"

@@ -1,2 +1,5 @@
+from .file_handler import FileHandler
+from .gui import FileOrganizerGUI
+from .organizer import FileOrganizer
 
-# This file is intentionally left empty to mark the directory as a Python package.
+__all__ = ["FileOrganizer", "FileHandler", "FileOrganizerGUI"]

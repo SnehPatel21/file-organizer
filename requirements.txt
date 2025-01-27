@@ -1,6 +1,8 @@
-python-magic==0.4.27
-PyYAML==6.0.1
-pytest==7.4.0
 black==23.7.0
-pylint==2.17.5
+filetype==1.2.0
+flake8==6.1.0
+isort==5.12.0
 pre-commit==3.3.3
+pytest==7.4.0
+python-magic-bin==0.4.14
+PyYAML==6.0.1
